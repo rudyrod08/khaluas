@@ -64,7 +64,7 @@
                     data-bs-target="#templatemo_search">
                     <i class="fa fa-fw fa-search text-dark mr-2"></i>
                 </a>
-                <a class="nav-icon position-relative text-decoration-none" href="#">
+                <a class="nav-icon position-relative text-decoration-none" href="#" onclick="mostrarCarrito()">
                     <i class="fa fa-fw fa-cart-arrow-down text-dark mr-1"></i>
                     <span id="cantidadCarrito"
                         class="position-absolute ms-1 mb-1 top-0 start-100 translate-middle badge rounded-pill bg-danger">
@@ -73,8 +73,7 @@
                 </a>
                 <div id="contenedorCarrito" style="display: none;">
                     <ul id="listaProductos"></ul>
-
-                    <button onclick="realizarCompra()">Realizar Compra</button>
+                    <button class="btn btn-success" onclick="realizarCompra()">Realizar Compra</button>
                 </div>
             </div>
         </div>
