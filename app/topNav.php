@@ -71,6 +71,11 @@
                         0 <!-- Cantidad inicial (puedes establecerla a 0) -->
                     </span>
                 </a>
+                <div id="contenedorCarrito" style="display: none;">
+                    <ul id="listaProductos"></ul>
+
+                    <button onclick="realizarCompra()">Realizar Compra</button>
+                </div>
             </div>
         </div>
 
