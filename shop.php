@@ -75,7 +75,7 @@ $productos = $modeloProductos->obtenerProductos();
                 <div class="col-md-6">
                     <ul class="list-inline shop-top-menu pb-3 pt-1">
                         <li class="list-inline-item">
-                            <h4 class="h3 text-dark text-decoration-none mr-3" href="#">Productos</h4>
+                            <h4 class="h2 fw-bolder mr-3" href="#">Productos</h4>
                         </li>
                     </ul>
                 </div>
@@ -103,8 +103,10 @@ $productos = $modeloProductos->obtenerProductos();
                                     <div
                                         class="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center">
                                         <ul class="list-unstyled">
-                                            <li><button class="btn btn-primary text-white mt-2"><i
-                                                        class="fas fa-cart-plus"></i></button></li>
+                                            <li><button class="btn btn-primary text-white mt-2"
+                                                    onclick="agregarProducto(<?= $row['id_producto'] ?>, '<?= $row['nombre'] ?>', <?= $row['precio'] ?>)"><i
+                                                        class="fas fa-cart-plus"></i></button>
+                                            </li>
                                         </ul>
                                     </div>
                                 </div>
@@ -354,6 +356,7 @@ $productos = $modeloProductos->obtenerProductos();
         <script src="assets/js/bootstrap.bundle.min.js"></script>
         <script src="assets/js/templatemo.js"></script>
         <script src="assets/js/custom.js"></script>
+        <script src="resources/js/carrito.js"></script>
         <!-- End Script -->
         </body>
 
