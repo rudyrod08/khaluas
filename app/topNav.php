@@ -71,9 +71,30 @@
                         0 <!-- Cantidad inicial (puedes establecerla a 0) -->
                     </span>
                 </a>
-                <div id="contenedorCarrito" style="display: none;">
-                    <ul id="listaProductos"></ul>
-                    <button class="btn btn-success" onclick="realizarCompra()">Realizar Compra</button>
+                <!-- Modal -->
+                <div class="modal fade" id="contenedorCarrito" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    style="display: none;" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <i class="fa fa-shopping-cart text-primary mx-4 fs-4" aria-hidden="false"></i>
+                                <h1 class="modal-title fs-4 fw-bolder" id="exampleModalLabel">Carrito</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <ul id="listaProductos" style="list-style-type: none;"></ul>
+                            </div>
+                            <div class="modal-footer justify-content-center">
+                                <button type="button" class="btn btn-lg btn-danger mx-3"
+                                    onclick="vaciarCarrito()">Vaciar carrito <i class="ms-2 fa fa-cart-arrow-down"
+                                        aria-hidden="true"></i></button>
+                                <button type="button" class="btn btn-lg btn-success mx-3"
+                                    onclick="realizarCompra()">Realizar compra <i class="ms-2 fa fa-shopping-bag"
+                                        aria-hidden="true"></i></button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
